@@ -12,7 +12,7 @@ const local = require('./middleware/setLocal')
 
 
 const hostname = '127.0.0.1'
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // serving static file
 app.use(express.static(path.join(__dirname, 'public')))

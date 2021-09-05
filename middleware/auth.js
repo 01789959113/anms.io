@@ -18,7 +18,7 @@ const auth = async (req, res, next)=>{
     }
 }
 
-const isUnAuthenticated = async(req, res, next)=>{
+const isUnAuthenticated = (req, res, next)=>{
     if(req.session.isLoggedIn){
         res.render('index', {title: 'Home'})
     }
